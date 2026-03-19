@@ -1,10 +1,9 @@
 // This is your data repository. Add or Edit content here.
-const aknoRM_Data[cat] = {
+const aknoRM_Data = {
 
     // ==========================================
     // 1. SAFETY (নিরাপত্তামূলক)
     // ==========================================
-  
     'Safety': {
         title: 'নিরাপত্তামূলক ড্রাইভিং নির্দেশিকা',
         text: `
@@ -36,37 +35,33 @@ const aknoRM_Data[cat] = {
         title: 'ড্যাশবোর্ড সূচক',
         text: 'ড্যাশবোর্ডের লাল বাতি বিপদের সংকেত। ছবি দেখে সংকেত চিনুন।',
         youtubeId: 'example_dash'
-    }
+    }, // <-- Comma added here
 
     // ==========================================
     // 4. Troubleshooting (ত্রুটি নিরূপণ)
     // ==========================================
-
-   'Troubleshooting': {
-        title: 'ড্যাশবোর্ড সূচক',
-        text: 'ড্যাশবোর্ডের লাল বাতি বিপদের সংকেত। ছবি দেখে সংকেত চিনুন।',
-        youtubeId: 'example_dash'
-    }
+    'Fault': { // This matches the ID 'Fault' in your HTML
+        title: 'ত্রুটি নিরূপণ (Troubleshooting)',
+        text: 'ইঞ্জিন স্টার্ট না হলে ব্যাটারি টার্মিনাল এবং ফুয়েল লাইন চেক করুন।',
+        youtubeId: 'example_fault'
+    }, // <-- Comma added here
 
     // ==========================================
     // 5. Maintenance (রক্ষণাবেক্ষণ)
     // ==========================================
+    'Maintenance': {
+        title: 'রক্ষণাবেক্ষণ (Maintenance)',
+        text: 'সাপ্তাহিক রক্ষণাবেক্ষণের সময় গ্রিজিং পয়েন্টগুলো চেক করুন।',
+        youtubeId: 'example_maint'
+    }, // <-- Comma added here
 
-   'Maintenance': {
-        title: 'ড্যাশবোর্ড সূচক',
-        text: 'ড্যাশবোর্ডের লাল বাতি বিপদের সংকেত। ছবি দেখে সংকেত চিনুন।',
-        youtubeId: 'example_dash'
-    }
-
-     // ==========================================
+    // ==========================================
     // 6. Training (প্রশিক্ষণ ভিডিও)
     // ==========================================
-
-   'Training': {
-        title: 'ড্যাশবোর্ড সূচক',
-        text: 'ড্যাশবোর্ডের লাল বাতি বিপদের সংকেত। ছবি দেখে সংকেত চিনুন।',
-        youtubeId: 'example_dash'
+    'Video': { // This matches the ID 'Video' in your HTML
+        title: 'প্রশিক্ষণ ভিডিও (Training Videos)',
+        text: 'বিভিন্ন ড্রাইভিং টেকনিক শিখতে নিচের ভিডিওটি দেখুন।',
+        youtubeId: 'example_video'
     }
 
-
-};
+}; // End of Object

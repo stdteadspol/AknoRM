@@ -23,7 +23,6 @@ const aknoRM_Data = {
             </ul>
 
             <strong>২। যানবাহন দুর্ঘটনার প্রধান কারণসমূহ</strong>
-            text: `
             <strong>ক। চালকের ব্যক্তিগত ও মানবিক কারণ (Human Factors)</strong>
             <ul>
                 <li><strong>অসতর্কতা:</strong> অতিরিক্ত গতি, মোবাইল ব্যবহার এবং অমনোযোগ।</li>
@@ -58,7 +57,6 @@ const aknoRM_Data = {
             </ul>
                     
             <strong>৩। দুর্ঘটনা প্রতিরোধে করণীয়</strong>
-            text: `
         <strong>নিরাপদ যাত্রা নিশ্চিত করতে নিচের পদক্ষেপগুলো অনুসরণ করুন:</strong>
         <ul>
             <li><strong>প্রশিক্ষণ:</strong> উন্নতমানের ড্রাইভিং প্রশিক্ষণ নিশ্চিত করা।</li>

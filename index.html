@@ -50,30 +50,16 @@
     <div id="cat-content"></div>
 </div>
 
-<script>
-    // YOUR DATA GOES HERE
-    const data = {
-        'Safety': {
-            title: 'নিরাপত্তামূলক ড্রাইভিং নির্দেশিকা',
-            text: '১. সবসময় সিটবেল্ট ব্যবহার করুন। <br>২. কনভয় ডিসিপ্লিন বজায় রাখুন।',
-            youtubeId: 'rHrJkvKEySE' // Replace with real YouTube Video ID
-        },
-        'PreDrive': {
-            title: 'যানবাহন চালনার পূর্বে করণীয়',
-            text: 'টায়ার প্রেশার, লুব ওয়েল এবং কুল্যান্ট লেভেল চেক করুন।',
-            youtubeId: 'mzHuFmATv6c' 
-        },
-        'Dashboard': {
-            title: 'ড্যাশবোর্ড সূচক (Dashboard Indicators)',
-            text: 'লাল বাতি জ্বললে গাড়ি সাথে সাথে নিরাপদ স্থানে থামান।',
-            youtubeId: 'example3'
-        }
-        // Add more categories here matching the IDs in showCategory()
-    };
+<script src="data.js"></script>
 
+<script>
+    // 2. Use the data from the external file
     function showCategory(cat) {
-        const item = data[cat];
-        if(!item) { alert("Data coming soon!"); return; }
+        const item = aknoRM_Data[cat]; // This now pulls from data.js
+        if(!item) { 
+            alert("এই মডিউলটি এখনো আপডেট করা হয়নি। শীঘ্রই আসছে!"); 
+            return; 
+        }
         
         document.getElementById('main-menu').style.display = 'none';
         document.getElementById('content-view').style.display = 'block';

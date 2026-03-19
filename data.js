@@ -1,5 +1,5 @@
 // This is your data repository. Add or Edit content here.
-const aknoRM_Data = {
+const aknoRM_Data[cat] = {
 
     // ==========================================
     // 1. SAFETY (নিরাপত্তামূলক)

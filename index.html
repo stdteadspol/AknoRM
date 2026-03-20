@@ -5,78 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AknoRM - ASC Knowledge Repository</title>
     <style>
-        :root { --army-green: #4B5320; --gold: #D4AF37; --light-gray: #f4f4f4; }
+        :root { --army-green: #4B5320; --gold: #D4AF37; --light-gray: #f4f4f4; --emergency-red: #d32f2f; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--light-gray); text-align: center; }
-        header { background: var(--army-green); color: white; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
         
+        /* Reduced Header with Logo */
+        header { 
+            background: var(--army-green); 
+            color: white; 
+            padding: 10px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+        }
+        header img { width: 50px; height: 50px; border-radius: 50%; border: 2px solid var(--gold); }
+        header h1 { margin: 0; font-size: 1.5em; letter-spacing: 1px; }
+
+        /* Search Bar Area */
+        .search-container { padding: 15px; max-width: 500px; margin: auto; }
+        #searchInput { 
+            width: 100%; padding: 12px; border-radius: 25px; border: 2px solid var(--army-green); 
+            outline: none; font-size: 1em; box-sizing: border-box;
+        }
+
         /* Main Grid Menu */
-        .menu-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; padding: 20px; max-width: 500px; margin: auto; }
-        .menu-item { background: white; border: 2px solid var(--army-green); padding: 20px; border-radius: 12px; 
-                     font-weight: bold; cursor: pointer; transition: 0.3s; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .menu-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 0 20px 20px; max-width: 500px; margin: auto; }
+        .menu-item { 
+            background: white; border: 1px solid #ddd; padding: 20px; border-radius: 12px; 
+            font-weight: bold; cursor: pointer; transition: 0.3s; 
+            display: flex; flex-direction: column; align-items: center; justify-content: center; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
         .menu-item:active { background: var(--gold); transform: scale(0.95); }
         .full-width { grid-column: span 2; }
+        .emergency { border: 2px solid var(--emergency-red); color: var(--emergency-red); }
 
         /* Content View */
         #content-view { display: none; padding: 20px; text-align: left; background: white; min-height: 100vh; }
-        .back-btn { background: var(--army-green); color: white; border: none; padding: 10px 20px; border-radius: 5px; margin-bottom: 20px; cursor: pointer; }
+        .back-btn { background: var(--army-green); color: white; border: none; padding: 10px 20px; border-radius: 5px; margin-bottom: 20px; cursor: pointer; font-weight: bold; }
         
-        /* Responsive Video Wrapper */
-        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        /* Instruction & Video */
+        .instruction-text { line-height: 1.6; color: #333; font-size: 1.05em; background: #fffde7; padding: 15px; border-left: 5px solid var(--gold); border-radius: 4px; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 20px 0; border-radius: 8px; background: #000; }
         .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-        
-        .instruction-text { line-height: 1.6; color: #333; font-size: 1.1em; background: #fffde7; padding: 15px; border-left: 5px solid var(--gold); }
     </style>
 </head>
 <body>
 
 <header>
+    <img src="icon/logo.png" alt="AknoRM Logo">
     <h1>AknoRM</h1>
-    <p>ASC Knowledge Repository (MT)</p>
 </header>
 
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="খুঁজুন (যেমন: ব্রেক, তেল, লাইট...)" onkeyup="searchContent()">
+</div>
+
 <div id="main-menu" class="menu-grid">
-    <div class="menu-item full-width" onclick="showCategory('Search')">🔍 খুঁজুন (Search)</div>
     <div class="menu-item" onclick="showCategory('Safety')">🛡️ ড্রাইভিং নির্দেশিকা</div>
     <div class="menu-item" onclick="showCategory('PreDrive')">⚙️ চালনার পূর্বে</div>
     <div class="menu-item" onclick="showCategory('Dashboard')">📟 ড্যাশবোর্ড সূচক</div>
     <div class="menu-item" onclick="showCategory('Fault')">🛠️ ত্রুটি নিরূপণ</div>
     <div class="menu-item" onclick="showCategory('Maintenance')">🔧 রক্ষণাবেক্ষণ</div>
-    <div class="menu-item" onclick="showCategory('Video')">🎥 প্রশিক্ষণ ভিডিও</div>
+    <div class="menu-item" onclick="showCategory('FirstAid')">🚑 প্রাথমিক চিকিৎসা</div>
+    <div class="menu-item full-width" onclick="showCategory('Video')">🎥 সচেতনতামূলক ভিডিও</div>
+    
+    <div class="menu-item full-width emergency" onclick="location.href='tel:+8801700000000'">
+        🚨 জরুরী যোগাযোগ (Emergency Call)
+    </div>
+
+    <div class="menu-item full-width" onclick="showCategory('About')" style="font-size: 0.85em; background: #eee;">
+        ℹ️ অ্যাপ সম্পর্কে (About)
+    </div>
 </div>
 
 <div id="content-view">
     <button class="back-btn" onclick="goHome()">⬅ ফিরে যান (Back)</button>
-    <h2 id="cat-title"></h2>
+    <h2 id="cat-title" style="color: var(--army-green); border-bottom: 2px solid var(--gold); padding-bottom: 10px;"></h2>
     <div id="cat-content"></div>
 </div>
 
 <script src="data.js"></script>
 
 <script>
-    // 2. Use the data from the external file
+    // 1. Show Category Content
     function showCategory(cat) {
-        const item = aknoRM_Data[cat]; // This now pulls from data.js
+        const item = aknoRM_Data[cat];
         if(!item) { 
-            alert("এই মডিউলটি এখনো আপডেট করা হয়নি। শীঘ্রই আসছে!"); 
+            alert("এই মডিউলটি এখনো আপডেট করা হয়নি।"); 
             return; 
         }
         
         document.getElementById('main-menu').style.display = 'none';
+        document.querySelector('.search-container').style.display = 'none';
         document.getElementById('content-view').style.display = 'block';
         
         document.getElementById('cat-title').innerText = item.title;
+        
+        let videoHTML = '';
+        if(item.youtubeId && item.youtubeId !== '') {
+            videoHTML = `
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/${item.youtubeId}" frameborder="0" allowfullscreen></iframe>
+                </div>`;
+        }
+
         document.getElementById('cat-content').innerHTML = `
             <div class="instruction-text">${item.text}</div>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/${item.youtubeId}" frameborder="0" allowfullscreen></iframe>
-            </div>
+            ${videoHTML}
         `;
         window.scrollTo(0,0);
     }
 
+    // 2. Back to Home
     function goHome() {
         document.getElementById('main-menu').style.display = 'grid';
+        document.querySelector('.search-container').style.display = 'block';
         document.getElementById('content-view').style.display = 'none';
+    }
+
+    // 3. Search Logic
+    function searchContent() {
+        let input = document.getElementById('searchInput').value.toLowerCase();
+        let menuItems = document.getElementsByClassName('menu-item');
+
+        for (let i = 0; i < menuItems.length; i++) {
+            let text = menuItems[i].innerText.toLowerCase();
+            // Don't hide the emergency or search buttons during normal search
+            if (text.includes(input)) {
+                menuItems[i].style.display = "flex";
+            } else {
+                menuItems[i].style.display = "none";
+            }
+        }
     }
 </script>
 

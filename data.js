@@ -92,12 +92,90 @@ const aknoRM_Data = {
     // ==========================================
     // 3. DASHBOARD (ড্যাশবোর্ড সূচক)
     // ==========================================
-    'Dashboard': {
-        title: 'ড্যাশবোর্ড সূচক',
-        text: 'ড্যাশবোর্ডের লাল বাতি বিপদের সংকেত। ছবি দেখে সংকেত চিনুন।',
-        youtubeId: 'example_dash'
-    }, // <-- Comma added here
 
+'Dashboard': {
+        title: 'ড্যাশবোর্ড সূচক (Dashboard Indicators)',
+        text: `
+            <strong>১। রঙের গুরুত্ব (Color Coding)</strong>
+            <p>ড্যাশবোর্ডের প্রতিটি বাতির রঙের একটি নির্দিষ্ট অর্থ আছে:</p>
+            <ul>
+                <li>🔴 <strong>লাল (Red):</strong> বিপদ! গাড়ি সাথে সাথে নিরাপদ স্থানে থামান।</li>
+                <li>🟡 <strong>হলুদ/কমলা (Yellow/Amber):</strong> সতর্কতা। দ্রুত পরীক্ষা করা প্রয়োজন।</li>
+                <li>🟢 🔵 <strong>সবুজ/নীল (Green/Blue):</strong> তথ্যমূলক বা সচল ফাংশন।</li>
+            </ul>
+
+            <hr>
+
+            <strong>২। ড্যাশবোর্ড সূচক: কারণ ও করণীয়</strong>
+            
+            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid red;">
+                <strong>🛑 হ্যান্ড ব্রেক ওয়ার্নিং (Hand Brake/Brake Fluid)</strong><br>
+                <em>কারণ:</em> ব্রেক ফ্লুইডের পরিমাণ খুব কম বা হ্যান্ডব্রেক টানা।<br>
+                <em>করণীয়:</em> গাড়ি থামিয়ে ব্রেক ফ্লুইড পরীক্ষা করুন এবং পূর্ণ করুন।
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid red;">
+                <strong>🌡️ টেম্পারেচার ওয়ার্নিং (Temperature Warning)</strong><br>
+                <em>কারণ:</em> রেডিয়েটরে কুলেন্ট নেই বা ইঞ্জিন অতিরিক্ত গরম।<br>
+                <em>করণীয়:</em> নিরাপদ স্থানে থামুন। রেডিয়েটর কুলেন্ট চেক করুন।
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid #ffc107;">
+                <strong>⚠️ টায়ার প্রেসার লো (Low Tire Pressure)</strong><br>
+                <em>কারণ:</em> টায়ারের প্রেসার কম বা পাংচার।<br>
+                <em>করণীয়:</em> টায়ার চেক করুন এবং সঠিক প্রেসার দিন।
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid #ffc107;">
+                <strong>🛞 ABS ওয়ার্নিং (Anti-lock Braking System)</strong><br>
+                <em>কারণ:</em> ABS সেন্সর বা মোটর কাজ করছে না।<br>
+                <em>করণীয়:</em> ABS সেন্সর চেক করুন বা ওয়ার্কশপে দেখান।
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid red;">
+                <strong>🛢️ অয়েল প্রেসার লো (Oil Pressure Low)</strong><br>
+                <em>কারণ:</em> ইঞ্জিন অয়েল কম বা অয়েল পাম্প নষ্ট।<br>
+                <em>করণীয়:</em> ইঞ্জিন অয়েল পূরণ করুন, পাম্প চেক করুন।
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid #ffc107;">
+                <strong>⚡ ইঞ্জিন/ইমিশন ওয়ার্নিং (Check Engine)</strong><br>
+                <em>কারণ:</em> এয়ার ফিল্টার জ্যাম বা অক্সিজেন সেন্সর খারাপ।<br>
+                <em>করণীয়:</em> এয়ার ফিল্টার পরিষ্কার করুন বা সেন্সর বদলান।
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid #ffc107;">
+                <strong>➰ গ্লো প্লাগ (Diesel Pre-heat Warning)</strong><br>
+                <em>কারণ:</em> গ্লো রিলে বা প্লাগ কাজ করছে না।<br>
+                <em>করণীয়:</em> গ্লো প্লাগ মেরামত বা পরিবর্তন করুন।
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid red;">
+                <strong>🔋 ব্যাটারি/অল্টারনেটর ওয়ার্নিং</strong><br>
+                <em>কারণ:</em> ব্যাটারির চার্জ কম বা অল্টারনেটর বেল্ট ঢিলা।<br>
+                <em>করণীয়:</em> ব্যাটারি চার্জ ও অল্টারনেটর চেক করুন।
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid #ffc107;">
+                <strong>💧 ওয়াটার ইন ফুয়েল ফিল্টার</strong><br>
+                <em>কারণ:</em> ফুয়েল ফিল্টারে পানি জমেছে।<br>
+                <em>করণীয়:</em> ফুয়েল ফিল্টার পরিষ্কার/ড্রেন করুন।
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid red;">
+                <strong>💺 সিট বেল্ট রিমাইন্ডার</strong><br>
+                <em>কারণ:</em> সিট বেল্ট পরা হয়নি।<br>
+                <em>করণীয়:</em> সিট বেল্ট দ্রুত এবং সঠিকভাবে লাগিয়ে নিন।
+            </div>
+
+            <p style="background:#e3f2fd; padding:10px; border-left:5px solid #2196f3;">
+                <strong>পরামর্শ:</strong> গাড়ি স্টার্ট দেওয়ার সময় সব বাতি জ্বলে উঠবে। যদি স্টার্ট হওয়ার পরও কোনো লাল বা হলুদ বাতি জ্বলে থাকে, তবে সেটি গুরুত্বের সাথে নিন।
+            </p>
+        `,
+        youtubeId: 'mzHuFmATv6c'
+    //<img src="icons/oil_light.png" width="30"> অয়েল প্রেসার লো
+    },
+   
     // ==========================================
     // 4. Troubleshooting (ত্রুটি নিরূপণ)
     // ==========================================

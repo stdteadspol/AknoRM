@@ -527,17 +527,17 @@ const aknoRM_Data = {
         title: 'অ্যাপ সম্পর্কে (About AknoRM)',
         text: `
             <div style="text-align: center; padding: 20px;">
-                <img src="https://img.icons8.com/color/96/military-medal.png" style="width: 80px; margin-bottom: 15px;">
+                <img src="logo.png" style="width: 80px; margin-bottom: 15px;">
                 <h3 style="color: var(--army-green);">AknoRM</h3>
                 <p><strong>ASC Knowledge Repository (MT)</strong></p>
                 <hr>
                 <p style="text-align: left; line-height: 1.6;">
-                    <strong>উদ্দেশ্য:</strong> বাংলাদেশ সেনাবাহিনীর এমটি (MT) সেকশনের চালকদের পেশাদার জ্ঞান বৃদ্ধি, নিরাপদ ড্রাইভিং নিশ্চিতকরণ এবং যান্ত্রিক ত্রুটি নিরূপণে তাৎক্ষণিক সহায়তা প্রদানের লক্ষ্যে এই ডিজিটাল প্ল্যাটফর্মটি তৈরি করা হয়েছে। 
+                    <strong>উদ্দেশ্য:</strong> বাংলাদেশ সেনাবাহিনীর এমটি (MT) পেশার সেনাসদস্যদের পেশাদার জ্ঞান বৃদ্ধি, নিরাপদ ড্রাইভিং নিশ্চিতকরণ এবং যান্ত্রিক ত্রুটি নিরূপণে তাৎক্ষণিক সহায়তা প্রদানের লক্ষ্যে এই ডিজিটাল প্ল্যাটফর্মটি তৈরি করা হয়েছে। 
                 </p>
                 <div style="background: #f4f4f4; padding: 15px; border-radius: 10px; margin-top: 20px;">
                     <p><strong>পরিকল্পনা ও উন্নয়নে:</strong></p>
-                    <p style="font-weight: bold; color: var(--army-green); font-size: 1.2em;">আপনার নাম এখানে লিখুন</p>
-                    <p>সাপ্লাই অ্যান্ড ট্রান্সপোর্ট (ST) ডিরেক্টরেট</p>
+                    <p style="font-weight: bold; color: var(--army-green); font-size: 1.2em;">লেঃ কর্নেল মোহাম্মদ আব্দুল কাদের,মোবাইলঃ০১৭৬৯০০৬৬২৩</p>
+                    <p>Supply & Transport Directorate</p>
                 </div>
                 <p style="font-size: 0.8em; margin-top: 20px; color: #777;">ভার্সন: ১.০.০ (২০২৬)</p>
             </div>

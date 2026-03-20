@@ -84,11 +84,82 @@ const aknoRM_Data = {
     // 2. PRE-DRIVE (চালনার পূর্বে)
     // ==========================================
     'PreDrive': {
-        title: 'যানবাহন চালনার পূর্বে করণীয়',
-        text: 'টায়ার প্রেশার, লুব ওয়েল এবং কুল্যান্ট লেভেল চেক করুন।',
+        title: 'যানবাহন চালনার পূর্বে করণীয় (Pre-driving Duties)',
+        text: `
+            <div style="background: #e3f2fd; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #1976d2;">
+                <strong>১। কর্তব্যে যাওয়ার পূর্বে সম্পাদনীয় কার্যাবলি:</strong>
+            </div>
+            
+            <ul style="line-height: 1.8;">
+                <li><strong>ক। কারিগরি পরীক্ষা:</strong> গাড়ি চালানোর আগে সম্পূর্ণরূপে পরীক্ষা করে নিশ্চিত হোন যে কোনো যান্ত্রিক ত্রুটি নেই।</li>
+                <li><strong>খ। প্রথম পর্যায়ের পরীক্ষা (First Line Check):</strong>
+                    <ul style="list-style-type: circle; margin-left: 20px; color: #555;">
+                        <li>রেডিয়েটরে পর্যাপ্ত পানি (Coolant) আছে।</li>
+                        <li>ইঞ্জিন সাম্পে (Sump) পর্যাপ্ত তেল (Oil) আছে।</li>
+                        <li>ফুয়েল ট্যাংকে পর্যাপ্ত জ্বালানি আছে।</li>
+                        <li>কোনো সিস্টেমে লিকেজ (Leakage) নেই।</li>
+                        <li>চাকার হাওয়ার চাপ (Tyre Pressure) সঠিক আছে।</li>
+                    </ul>
+                </li>
+                <li><strong>গ। নিয়ন্ত্রণ ব্যবস্থা:</strong> ব্রেক, স্টিয়ারিং, হর্ন ও লাইট সঠিকভাবে কাজ করছে কিনা পরীক্ষা করুন।</li>
+                <li><strong>ঘ। পরিচ্ছন্নতা:</strong> গাড়ির ভেতর ও বাহিরের পরিষ্কার-পরিচ্ছন্নতা নিশ্চিত করুন।</li>
+                <li><strong>ঙ। কাগজপত্র:</strong> যাত্রার আগে সব প্রয়োজনীয় ডকুমেন্ট সংগ্রহ করুন।</li>
+            </ul>
+
+            <div style="background: #f1f8e9; padding: 15px; border-radius: 8px; margin-top: 20px; margin-bottom: 20px; border-left: 5px solid #388e3c;">
+                <strong>২। কর্তব্যে যাওয়ার পূর্বে বহনযোগ্য কাগজপত্র (Documents Checklist):</strong>
+            </div>
+
+            <table style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
+                <tr style="background: #eee;">
+                    <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">ডকুমেন্টের নাম</th>
+                    <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">ফরম নম্বর</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ddd; padding: 8px;">গাড়ির চাহিদা ও আদেশ ফরম</td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">BAFZ-2150</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ddd; padding: 8px;">সরকারি গাড়ির ডিউটি স্লিপ</td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">BAFZ-2007</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ddd; padding: 8px;">চালকের অনুমতি ও আদেশপত্র</td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">BAFZ-2208</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ddd; padding: 8px;">পরিচয়পত্র (ID Card)</td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">BAFZ-3092</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ddd; padding: 8px;">গাড়ির লগ বুক</td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">BAFZ-2197</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ddd; padding: 8px;">সড়ক দুর্ঘটনা প্রতিবেদন ফরম</td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">BAFY-1971</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ddd; padding: 8px;">কার্যাদেশ (এমটিও'র স্বাক্ষরসহ)</td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">BAFZ-1370</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ddd; padding: 8px;">শেষ রসদ সনদ (LPC) ও গমনাদেশ</td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">BAFS-1524 / BAFT-1762</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ddd; padding: 8px;">মিল্টারি ক্রেডিট (MC) নোট</td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">ফেরি পারাপারের জন্য</td>
+                </tr>
+            </table>
+
+            <p style="margin-top: 15px; font-style: italic; color: #d32f2f;">
+                * বাইরের স্টেশনে (Outstation) ডিউটির ক্ষেত্রে কার্যাদেশ, LPC এবং গমনাদেশ সাথে রাখা বাধ্যতামূলক।
+            </p>
+        `,
         youtubeId: 'mzHuFmATv6c' 
     },
-
+   
     // ==========================================
     // 3. DASHBOARD (ড্যাশবোর্ড সূচক)
     // ==========================================

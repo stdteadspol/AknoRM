@@ -167,84 +167,101 @@ const aknoRM_Data = {
 'Dashboard': {
         title: 'ড্যাশবোর্ড সূচক (Dashboard Indicators)',
         text: `
-            <strong>১। রঙের গুরুত্ব (Color Coding)</strong>
-            <p>ড্যাশবোর্ডের প্রতিটি বাতির রঙের একটি নির্দিষ্ট অর্থ আছে:</p>
-            <ul>
-                <li>🔴 <strong>লাল (Red):</strong> বিপদ! গাড়ি সাথে সাথে নিরাপদ স্থানে থামান।</li>
-                <li>🟡 <strong>হলুদ/কমলা (Yellow/Amber):</strong> সতর্কতা। দ্রুত পরীক্ষা করা প্রয়োজন।</li>
-                <li>🟢 🔵 <strong>সবুজ/নীল (Green/Blue):</strong> তথ্যমূলক বা সচল ফাংশন।</li>
-            </ul>
-
-            <hr>
-
-            <strong>২। ড্যাশবোর্ড সূচক: কারণ ও করণীয়</strong>
-            
-            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid red;">
-                <strong>🛑 হ্যান্ড ব্রেক ওয়ার্নিং (Hand Brake/Brake Fluid)</strong><br>
-                <em>কারণ:</em> ব্রেক ফ্লুইডের পরিমাণ খুব কম বা হ্যান্ডব্রেক টানা।<br>
-                <em>করণীয়:</em> গাড়ি থামিয়ে ব্রেক ফ্লুইড পরীক্ষা করুন এবং পূর্ণ করুন।
+            <div style="background: #eef2f3; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid var(--army-green);">
+                <strong>🚦 রঙের গুরুত্ব (Color Coding):</strong><br>
+                🔴 <strong>লাল (Red):</strong> বিপদ! দ্রুত নিরাপদ স্থানে থামুন।<br>
+                🟡 <strong>হলুদ (Yellow):</strong> সতর্কতা। দ্রুত চেক করুন।<br>
+                🟢 🔵 <strong>সবুজ/নীল:</strong> সিস্টেম সচল আছে।
             </div>
 
-            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid red;">
-                <strong>🌡️ টেম্পারেচার ওয়ার্নিং (Temperature Warning)</strong><br>
-                <em>কারণ:</em> রেডিয়েটরে কুলেন্ট নেই বা ইঞ্জিন অতিরিক্ত গরম।<br>
-                <em>করণীয়:</em> নিরাপদ স্থানে থামুন। রেডিয়েটর কুলেন্ট চেক করুন।
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+            <strong>২। সূচক সমূহের কারণ ও করণীয়:</strong><br><br>
+
+            <div style="display: flex; align-items: center; background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 8px; border-left: 5px solid red;">
+                <img src="icon/hand break warning.png" style="width: 45px; height: auto; margin-right: 15px;" alt="Brake">
+                <div style="flex: 1;">
+                    <strong>🛑 হ্যান্ড ব্রেক / ব্রেক ফ্লুইড</strong><br>
+                    <small><strong>কারণ:</strong> ব্রেক ফ্লুইড কম বা হ্যান্ডব্রেক টানা।<br><strong>করণীয়:</strong> ফ্লুইড চেক করুন এবং পূর্ণ করুন।</small>
+                </div>
             </div>
 
-            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid #ffc107;">
-                <strong>⚠️ টায়ার প্রেসার লো (Low Tire Pressure)</strong><br>
-                <em>কারণ:</em> টায়ারের প্রেসার কম বা পাংচার।<br>
-                <em>করণীয়:</em> টায়ার চেক করুন এবং সঠিক প্রেসার দিন।
+            <div style="display: flex; align-items: center; background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 8px; border-left: 5px solid red;">
+                <img src="icon/temperature warning.png" style="width: 45px; height: auto; margin-right: 15px;" alt="Temp">
+                <div style="flex: 1;">
+                    <strong>🌡️ টেম্পারেচার ওয়ার্নিং</strong><br>
+                    <small><strong>কারণ:</strong> রেডিয়েটরে কুলেন্ট নেই বা ইঞ্জিন অতিরিক্ত গরম।<br><strong>করণীয়:</strong> নিরাপদ স্থানে থামুন এবং কুল্যান্ট চেক করুন।</small>
+                </div>
             </div>
 
-            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid #ffc107;">
-                <strong>🛞 ABS ওয়ার্নিং (Anti-lock Braking System)</strong><br>
-                <em>কারণ:</em> ABS সেন্সর বা মোটর কাজ করছে না।<br>
-                <em>করণীয়:</em> ABS সেন্সর চেক করুন বা ওয়ার্কশপে দেখান।
+            <div style="display: flex; align-items: center; background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 8px; border-left: 5px solid red;">
+                <img src="icon/oil pressure low.png" style="width: 45px; height: auto; margin-right: 15px;" alt="Oil">
+                <div style="flex: 1;">
+                    <strong>🛢️ অয়েল প্রেসার লো</strong><br>
+                    <small><strong>কারণ:</strong> ইঞ্জিন অয়েল কম বা পাম্প নষ্ট।<br><strong>করণীয়:</strong> লুব অয়েল টপ-আপ করুন এবং পাম্প চেক করুন।</small>
+                </div>
             </div>
 
-            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid red;">
-                <strong>🛢️ অয়েল প্রেসার লো (Oil Pressure Low)</strong><br>
-                <em>কারণ:</em> ইঞ্জিন অয়েল কম বা অয়েল পাম্প নষ্ট।<br>
-                <em>করণীয়:</em> ইঞ্জিন অয়েল পূরণ করুন, পাম্প চেক করুন।
+            <div style="display: flex; align-items: center; background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 8px; border-left: 5px solid red;">
+                <img src="icon/battary war ning.png" style="width: 45px; height: auto; margin-right: 15px;" alt="Battery">
+                <div style="flex: 1;">
+                    <strong>🔋 ব্যাটারি / অল্টারনেটর ওয়ার্নিং</strong><br>
+                    <small><strong>কারণ:</strong> ব্যাটারি চার্জ হচ্ছে না।<br><strong>করণীয়:</strong> অল্টারনেটর বেল্ট এবং টার্মিনাল চেক করুন।</small>
+                </div>
             </div>
 
-            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid #ffc107;">
-                <strong>⚡ ইঞ্জিন/ইমিশন ওয়ার্নিং (Check Engine)</strong><br>
-                <em>কারণ:</em> এয়ার ফিল্টার জ্যাম বা অক্সিজেন সেন্সর খারাপ।<br>
-                <em>করণীয়:</em> এয়ার ফিল্টার পরিষ্কার করুন বা সেন্সর বদলান।
+            <div style="display: flex; align-items: center; background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 8px; border-left: 5px solid #ffc107;">
+                <img src="icon/engine warning.png" style="width: 45px; height: auto; margin-right: 15px;" alt="Engine">
+                <div style="flex: 1;">
+                    <strong>⚡ চেক ইঞ্জিন (Check Engine)</strong><br>
+                    <small><strong>কারণ:</strong> সেন্সর, এয়ার ফিল্টার বা ইমিশন ত্রুটি।<br><strong>করণীয়:</strong> এয়ার ফিল্টার চেক করুন বা সেন্সর পরীক্ষা করুন।</small>
+                </div>
             </div>
 
-            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid #ffc107;">
-                <strong>➰ গ্লো প্লাগ (Diesel Pre-heat Warning)</strong><br>
-                <em>কারণ:</em> গ্লো রিলে বা প্লাগ কাজ করছে না।<br>
-                <em>করণীয়:</em> গ্লো প্লাগ মেরামত বা পরিবর্তন করুন।
+            <div style="display: flex; align-items: center; background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 8px; border-left: 5px solid #ffc107;">
+                <img src="icon/tire pressure low.png" style="width: 45px; height: auto; margin-right: 15px;" alt="Tire">
+                <div style="flex: 1;">
+                    <strong>⚠️ টায়ার প্রেসার লো (TPMS)</strong><br>
+                    <small><strong>কারণ:</strong> হাওয়া কম বা চাকা পাংচার।<br><strong>করণীয়:</strong> টায়ার প্রেসার চেক করুন এবং সঠিক হাওয়া দিন।</small>
+                </div>
             </div>
 
-            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid red;">
-                <strong>🔋 ব্যাটারি/অল্টারনেটর ওয়ার্নিং</strong><br>
-                <em>কারণ:</em> ব্যাটারির চার্জ কম বা অল্টারনেটর বেল্ট ঢিলা।<br>
-                <em>করণীয়:</em> ব্যাটারি চার্জ ও অল্টারনেটর চেক করুন।
+            <div style="display: flex; align-items: center; background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 8px; border-left: 5px solid #ffc107;">
+                <img src="icon/water in fuel filter.png" style="width: 45px; height: auto; margin-right: 15px;" alt="Fuel">
+                <div style="flex: 1;">
+                    <strong>💧 ওয়াটার ইন ফুয়েল ফিল্টার</strong><br>
+                    <small><strong>কারণ:</strong> ফুয়েল ফিল্টারে পানি জমেছে।<br><strong>করণীয়:</strong> ফিল্টার ড্রেন বা পরিষ্কার করুন।</small>
+                </div>
             </div>
 
-            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid #ffc107;">
-                <strong>💧 ওয়াটার ইন ফুয়েল ফিল্টার</strong><br>
-                <em>কারণ:</em> ফুয়েল ফিল্টারে পানি জমেছে।<br>
-                <em>করণীয়:</em> ফুয়েল ফিল্টার পরিষ্কার/ড্রেন করুন।
+            <div style="display: flex; align-items: center; background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 8px; border-left: 5px solid #ffc107;">
+                <img src="icon/ABS warning.png" style="width: 45px; height: auto; margin-right: 15px;" alt="ABS">
+                <div style="flex: 1;">
+                    <strong>🛞 ABS ওয়ার্নিং</strong><br>
+                    <small><strong>কারণ:</strong> এন্টি-লক ব্রেকিং সিস্টেমের সেন্সর বা মোটর ত্রুটি।<br><strong>করণীয়:</strong> ব্রেক সিস্টেম ওয়ার্কশপে চেক করান।</small>
+                </div>
             </div>
 
-            <div style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-left: 5px solid red;">
-                <strong>💺 সিট বেল্ট রিমাইন্ডার</strong><br>
-                <em>কারণ:</em> সিট বেল্ট পরা হয়নি।<br>
-                <em>করণীয়:</em> সিট বেল্ট দ্রুত এবং সঠিকভাবে লাগিয়ে নিন।
+            <div style="display: flex; align-items: center; background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 8px; border-left: 5px solid red;">
+                <img src="icon/seat belt warning.png" style="width: 45px; height: auto; margin-right: 15px;" alt="Seatbelt">
+                <div style="flex: 1;">
+                    <strong>💺 সিট বেল্ট রিমাইন্ডার</strong><br>
+                    <small><strong>কারণ:</strong> সিট বেল্ট লাগানো হয়নি।<br><strong>করণীয়:</strong> দ্রুত এবং সঠিকভাবে সিট বেল্ট লাগিয়ে নিন।</small>
+                </div>
             </div>
 
-            <p style="background:#e3f2fd; padding:10px; border-left:5px solid #2196f3;">
-                <strong>পরামর্শ:</strong> গাড়ি স্টার্ট দেওয়ার সময় সব বাতি জ্বলে উঠবে। যদি স্টার্ট হওয়ার পরও কোনো লাল বা হলুদ বাতি জ্বলে থাকে, তবে সেটি গুরুত্বের সাথে নিন।
+            <div style="display: flex; align-items: center; background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 8px; border-left: 5px solid #ffc107;">
+                <img src="icon/glow plug warning.png" style="width: 45px; height: auto; margin-right: 15px;" alt="Glowplug">
+                <div style="flex: 1;">
+                    <strong>➰ গ্লো প্লাগ (Diesel Pre-heat)</strong><br>
+                    <small><strong>কারণ:</strong> ডিজেল ইঞ্জিন প্রি-হিট সিস্টেম কাজ করছে না।<br><strong>করণীয়:</strong> রিলে বা গ্লো প্লাগ চেক করুন।</small>
+                </div>
+            </div>
+
+            <p style="background:#fffde7; padding:15px; border-radius:8px; border: 1px dashed #ffd54f; margin-top: 20px; font-size: 0.9em;">
+                <strong>💡 পরামর্শ:</strong> গাড়ি স্টার্ট দেওয়ার সময় সব বাতি মুহূর্তের জন্য জ্বলে উঠে আবার নিভে যাওয়া স্বাভাবিক। কিন্তু ড্রাইভ করার সময় কোনো লাল বা হলুদ বাতি জ্বলে থাকলে সেটিকে গুরুত্বের সাথে নিন।
             </p>
         `,
         youtubeId: 'mzHuFmATv6c'
-    //<img src="icons/oil_light.png" width="30"> অয়েল প্রেসার লো
     },
    
     // ==========================================

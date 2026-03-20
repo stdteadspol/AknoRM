@@ -414,7 +414,7 @@ const aknoRM_Data = {
         youtubeId: 'mzHuFmATv6c' 
     },
     
-        // ==========================================
+    // ==========================================
     // 6. Road Safty Awareness & Training video (সচেতনতামূলক ও প্রশিক্ষণ ভিডিও)
     // ==========================================
 'Video': {
@@ -466,6 +466,60 @@ const aknoRM_Data = {
         `,
         youtubeId: 'mzHuFmATv6c' // মূল ভিডিও হিসেবে একটি জেনারেল রোড সেফটি ভিডিও দেওয়া হয়েছে
     },
-  
+     // ==========================================
+    // 7. First Aid Guide (প্রাথমিক চিকিৎসা)
+    // ==========================================
+'FirstAid': {
+        title: 'প্রাথমিক চিকিৎসা (First Aid Guide)',
+        text: `
+            <div style="background: #e1f5fe; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #03a9f4;">
+                <strong>🚑 দুর্ঘটনায় আহতদের জন্য তাৎক্ষণিক করণীয়:</strong>
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 12px; margin-bottom: 12px; border-radius: 10px;">
+                <strong style="color: #d32f2f;">🩸 ১. রক্তপাত বন্ধ করা (Bleeding)</strong>
+                <p style="font-size: 0.9em; margin: 5px 0;">রক্তপাতের স্থানে পরিষ্কার কাপড় বা হাত দিয়ে চেপে ধরুন। ক্ষতস্থানটি হৃদপিণ্ডের স্তরের উপরে রাখার চেষ্টা করুন।</p>
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 12px; margin-bottom: 12px; border-radius: 10px;">
+                <strong style="color: #d32f2f;">🧠 ২. অজ্ঞান অবস্থা (Unconscious)</strong>
+                <p style="font-size: 0.9em; margin: 5px 0;">আহত ব্যক্তির শ্বাস-প্রশ্বাস পরীক্ষা করুন। তাকে সাবধানে চিৎ করে শুইয়ে দিন এবং মাথা ও ঘাড় সোজা রাখার চেষ্টা করুন যেন শ্বাস নিতে সুবিধা হয়।</p>
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 12px; margin-bottom: 12px; border-radius: 10px;">
+                <strong style="color: #d32f2f;">🦴 ৩. হার ভাঙা (Fracture)</strong>
+                <p style="font-size: 0.9em; margin: 5px 0;">ভাঙা অংশটি নড়াচড়া করবেন না। কাঠ বা শক্ত কিছু দিয়ে ভাঙা অংশের দুই পাশে ব্যান্ডেজ বা কাপড় দিয়ে হালকাভাবে বেঁধে দিন যেন স্থির থাকে।</p>
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 12px; margin-bottom: 12px; border-radius: 10px;">
+                <strong style="color: #d32f2f;">🔥 ৪. পুড়ে যাওয়া (Burns)</strong>
+                <p style="font-size: 0.9em; margin: 5px 0;">পোড়া স্থানে অন্তত ১০-২০ মিনিট পরিষ্কার ঠান্ডা পানি ঢালুন। কোনো বরফ বা মলম লাগাবেন না। পরিষ্কার পাতলা কাপড় দিয়ে ঢেকে দিন।</p>
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 12px; margin-bottom: 12px; border-radius: 10px;">
+                <strong style="color: #d32f2f;">🤢 ৫. শক (Shock)</strong>
+                <p style="font-size: 0.9em; margin: 5px 0;">আহত ব্যক্তিকে চিৎ করে শুইয়ে পা দুটি সামান্য উপরে তুলে দিন। গায়ের কাপড় ঢিলেঢালা করে দিন এবং তাকে আশ্বস্ত করুন।</p>
+            </div>
+
+            <div style="background: #f1f8e9; padding: 15px; border-radius: 8px; margin-top: 20px; border-left: 5px solid #388e3c;">
+                <strong>📦 প্রাথমিক চিকিৎসার বক্সে (First Aid Kit) যা থাকা জরুরি:</strong>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li>জীবাণুনাশক (যেমন: স্যাভলন বা ডেটল)</li>
+                    <li>ব্যান্ডেজ ও গজ কাপড়</li>
+                    <li>তুলা</li>
+                    <li>সিজার (কাঁচি) ও চিমটা</li>
+                    <li>ব্যথানাশক মলম</li>
+                    <li>বার্নল (পোড়া জায়গার জন্য মলম)</li>
+                }
+                </ul>
+            </div>
+            
+            <p style="text-align: center; color: #d32f2f; font-weight: bold; margin-top: 20px;">
+                🚨 প্রাথমিক চিকিৎসার পর দ্রুততম সময়ে আহত ব্যক্তিকে হাসপাতালে স্থানান্তর করুন।
+            </p>
+        `,
+        youtubeId: 'L-6B1M0pW9U' // Replace with a First Aid training video
+    },
+    
 
 }; // End of Object

@@ -253,13 +253,97 @@ const aknoRM_Data = {
     // ==========================================
     // 5. Maintenance (রক্ষণাবেক্ষণ)
     // ==========================================
-    'Maintenance': {
-        title: 'রক্ষণাবেক্ষণ (Maintenance)',
-        text: 'সাপ্তাহিক রক্ষণাবেক্ষণের সময় গ্রিজিং পয়েন্টগুলো চেক করুন।',
-        youtubeId: 'example_maint'
-    }, // <-- Comma added here
+   'Maintenance': {
+        title: 'রক্ষণাবেক্ষণ নির্দেশিকা (Vehicle Maintenance)',
+        text: `
+            <p style="background: #e8f5e9; padding: 10px; border-radius: 5px; border-left: 5px solid #2e7d32;">
+                <strong>গাড়ির দীর্ঘস্থায়িত্ব ও নিরাপত্তার জন্য নিচের ৭টি কর্মমালা নিয়মিত অনুসরণ করুন।</strong>
+            </p>
 
-    // ==========================================
+            <details style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 8px;">
+                <summary style="font-weight: bold; cursor: pointer; color: #2e7d32;">১নং কর্মমালা — সাধারণ (General)</summary>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li>রেডিয়েটরে কুল্যান্ট লেভেল পরীক্ষা করা।</li>
+                    <li>ইঞ্জিন অয়েল লেভেল পরীক্ষা ও প্রয়োজনমতো পূরণ করা।</li>
+                    <li>নিচে তেল বা পানি লিক করছে কিনা দেখা।</li>
+                    <li>ফুয়েল পাম্প/কার্বুরেটর লাইন চেক করা।</li>
+                    <li>ফুয়েল ট্যাংকে পর্যাপ্ত জ্বালানি নিশ্চিত করা।</li>
+                    <li>চাকার হাওয়ার চাপ ও নাট-বল্ট টাইট দেওয়া।</li>
+                    <li>ব্যাটারি সেটিং ও ফ্যান বেল্ট পরীক্ষা করা।</li>
+                    <li>লাইট ও হর্ন চেক করে <strong>এমটি সার্জেন্টকে</strong> রিপোর্ট করা।</li>
+                </ul>
+            </details>
+
+            <details style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 8px;">
+                <summary style="font-weight: bold; cursor: pointer; color: #1976d2;">২নং কর্মমালা — বৈদ্যুতিক (Electrical)</summary>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li>ব্যাটারির পানির লেভেল ও টার্মিনাল পরিষ্কার করা।</li>
+                    <li>সেলফ স্টার্টারের মাউন্টিং ও কাজ করার ক্ষমতা পরীক্ষা।</li>
+                    <li>অ্যাম্পিয়ার মিটার ও ব্যাটারির সব কানেকশন চেক করা।</li>
+                    <li>ডায়নামো ও প্লাগের ছিদ্র পরিষ্কার রাখা।</li>
+                    <li>সবশেষে <strong>এমটি সার্জেন্টকে</strong> রিপোর্ট করা।</li>
+                </ul>
+            </details>
+
+            <details style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 8px;">
+                <summary style="font-weight: bold; cursor: pointer; color: #d32f2f;">৩নং কর্মমালা — কন্ট্রোল (Control System)</summary>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li>ব্রেক ও হ্যান্ড ব্রেক সঠিকভাবে কাজ করছে কিনা পরীক্ষা।</li>
+                    <li>ক্লাচ পেডেলের ফ্রি-প্লে ও গিয়ার শিফটিং চেক।</li>
+                    <li>মাস্টার ও হুইল সিলিন্ডার লিক পরীক্ষা করা।</li>
+                    <li>ড্যাশবোর্ডের সব গেজ ও ব্রেক পাইপ চেক করা।</li>
+                    <li>এক্সিলারেটর পেডেলের সহজলভ্যতা নিশ্চিত করা।</li>
+                </ul>
+            </details>
+
+            <details style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 8px;">
+                <summary style="font-weight: bold; cursor: pointer; color: #ff8f00;">৪নং কর্মমালা — ট্রান্সমিশন (Transmission)</summary>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li>গিয়ার বক্স, ট্রান্সফার কেস ও ৪×৪ গিয়ার পরীক্ষা।</li>
+                    <li>প্রপেলার শ্যাফট ও ইউনিভার্সাল জয়েন্ট চেক করা।</li>
+                    <li>এক্সেল, ডিফারেনশিয়াল ও লিফ স্প্রিং পরীক্ষা।</li>
+                    <li>শক অ্যাবজর্বার ও টাই-রড জয়েন্ট চেক করা।</li>
+                </ul>
+            </details>
+
+            <details style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 8px;">
+                <summary style="font-weight: bold; cursor: pointer; color: #455a64;">৫নং কর্মমালা — ইঞ্জিন (Engine)</summary>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li>অয়েল সাম্প, গ্যাসকেট ও পাইপ পরীক্ষা করা।</li>
+                    <li>স্টার্ট অবস্থায় ইঞ্জিনের শব্দ ও রেডিয়েটর পানি চেক।</li>
+                    <li>এয়ার ক্লিনার, কার্বুরেটর ফুয়েল লেভেল ও ইগনিশন সিস্টেম চেক।</li>
+                    <li>ডিস্ট্রিবিউটর ও অল্টারনেটর সঠিকভাবে কাজ করা নিশ্চিত করা।</li>
+                </ul>
+            </details>
+
+            <details style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 8px;">
+                <summary style="font-weight: bold; cursor: pointer; color: #5d4037;">৬নং কর্মমালা — ফ্রেম ও ফিটিং (Frame & Fittings)</summary>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li>ফ্রেম, ক্রস মেম্বার ও বডির সব নাট-বল্ট পরীক্ষা।</li>
+                    <li>মাডগার্ড, বাম্পার, টো-হুক ও দরজার ফিটিং চেক।</li>
+                    <li>উইন্ডশিল্ড ফ্রেম, ভিউ মিরর ও সানভাইজার পরীক্ষা।</li>
+                    <li>ওয়াইপার ও ক্যানভাস/ক্যানাপি ঠিকভাবে ফিট করা।</li>
+                </ul>
+            </details>
+
+            <details style="background: #fff; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 8px;">
+                <summary style="font-weight: bold; cursor: pointer; color: #00897b;">৭নং কর্মমালা — লুব্রিকেশন (Lubrication)</summary>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li>গাড়ি পানি দিয়ে ধোয়া ও পরিষ্কার কাপড় দিয়ে মোছা।</li>
+                    <li>সব গ্রিজ নিপলে গ্রিজ ও কন্ট্রোল লিংকে তেল দেওয়া।</li>
+                    <li>লিফ স্প্রিং পরিষ্কার ও স্টিয়ারিং গিয়ার বক্সের তেল চেক।</li>
+                    <li>মাস্টার সিলিন্ডার ও অল্টারনেটর পরীক্ষা করা।</li>
+                </ul>
+            </details>
+
+            <p style="text-align: center; color: #d32f2f; font-weight: bold; margin-top: 20px;">
+                ⚠️ প্রতিটি কর্মমালা শেষে এমটি সার্জেন্টকে রিপোর্ট প্রদান করুন।
+            </p>
+        `,
+        youtubeId: 'mzHuFmATv6c' 
+    },
+    
+        // ==========================================
     // 6. Training (প্রশিক্ষণ ভিডিও)
     // ==========================================
     'Video': { // This matches the ID 'Video' in your HTML

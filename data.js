@@ -176,7 +176,7 @@ const aknoRM_Data = {
 
             <details style="background: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 10px; border-left: 5px solid red; overflow: hidden;">
                 <summary style="display: flex; align-items: center; padding: 12px; cursor: pointer; list-style: none; outline: none;">
-                    <img src="icon/brake.png" style="width: 40px; height: auto; margin-right: 15px;" alt="Brake">
+                    <img src="icon/hand_break.png" style="width: 40px; height: auto; margin-right: 15px;" alt="Brake">
                     <strong style="flex: 1;">🛑 হ্যান্ড ব্রেক / ব্রেক ফ্লুইড</strong>
                     <span style="color: #999;">▼</span>
                 </summary>
@@ -200,7 +200,7 @@ const aknoRM_Data = {
 
             <details style="background: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 10px; border-left: 5px solid red; overflow: hidden;">
                 <summary style="display: flex; align-items: center; padding: 12px; cursor: pointer; list-style: none; outline: none;">
-                    <img src="icon/oil.png" style="width: 40px; height: auto; margin-right: 15px;" alt="Oil">
+                    <img src="icon/oil_pressure.png" style="width: 40px; height: auto; margin-right: 15px;" alt="Oil">
                     <strong style="flex: 1;">🛢️ অয়েল প্রেসার লো</strong>
                     <span style="color: #999;">▼</span>
                 </summary>
@@ -212,7 +212,7 @@ const aknoRM_Data = {
 
             <details style="background: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 10px; border-left: 5px solid red; overflow: hidden;">
                 <summary style="display: flex; align-items: center; padding: 12px; cursor: pointer; list-style: none; outline: none;">
-                    <img src="icon/battery.png" style="width: 40px; height: auto; margin-right: 15px;" alt="Battery">
+                    <img src="icon/battary.png" style="width: 40px; height: auto; margin-right: 15px;" alt="Battery">
                     <strong style="flex: 1;">🔋 ব্যাটারি / চার্জিং ওয়ার্নিং</strong>
                     <span style="color: #999;">▼</span>
                 </summary>
@@ -224,7 +224,7 @@ const aknoRM_Data = {
 
             <details style="background: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 10px; border-left: 5px solid #ffc107; overflow: hidden;">
                 <summary style="display: flex; align-items: center; padding: 12px; cursor: pointer; list-style: none; outline: none;">
-                    <img src="icon/engine.png" style="width: 40px; height: auto; margin-right: 15px;" alt="Engine">
+                    <img src="icon/engine_warning.png" style="width: 40px; height: auto; margin-right: 15px;" alt="Engine">
                     <strong style="flex: 1;">⚡ চেক ইঞ্জিন (Check Engine)</strong>
                     <span style="color: #999;">▼</span>
                 </summary>
@@ -236,7 +236,7 @@ const aknoRM_Data = {
 
             <details style="background: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 10px; border-left: 5px solid #ffc107; overflow: hidden;">
                 <summary style="display: flex; align-items: center; padding: 12px; cursor: pointer; list-style: none; outline: none;">
-                    <img src="icon/tire.png" style="width: 40px; height: auto; margin-right: 15px;" alt="Tire">
+                    <img src="icon/tire_pressure.png" style="width: 40px; height: auto; margin-right: 15px;" alt="Tire">
                     <strong style="flex: 1;">⚠️ টায়ার প্রেসার লো (TPMS)</strong>
                     <span style="color: #999;">▼</span>
                 </summary>

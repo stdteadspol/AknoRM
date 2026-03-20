@@ -344,12 +344,57 @@ const aknoRM_Data = {
     },
     
         // ==========================================
-    // 6. Training (প্রশিক্ষণ ভিডিও)
+    // 6. Road Safty Awareness & Training video (সচেতনতামূলক ও প্রশিক্ষণ ভিডিও)
     // ==========================================
-    'Video': { // This matches the ID 'Video' in your HTML
-        title: 'প্রশিক্ষণ ভিডিও (Training Videos)',
-        text: 'বিভিন্ন ড্রাইভিং টেকনিক শিখতে নিচের ভিডিওটি দেখুন।',
-        youtubeId: 'example_video'
-    }
+'Video': {
+        title: 'সচেতনতামূলক ভিডিও (Road Safety Awareness)',
+        text: `
+            <p style="background: #fff8e1; padding: 12px; border-radius: 8px; border-left: 5px solid #ffc107; font-weight: bold;">
+                নিরাপদ ড্রাইভিং নিশ্চিত করতে নিচের ভিডিওগুলো মনোযোগ দিয়ে দেখুন:
+            </p>
+
+            <div style="display: grid; gap: 15px; margin-top: 20px;">
+                
+                <div style="background: #fff; border: 1px solid #ddd; padding: 12px; border-radius: 10px;">
+                    <strong style="color: #d32f2f;">১। অধিক গতি ও মৃত্যু (Speeding Kills)</strong>
+                    <p style="font-size: 0.9em; color: #555; margin: 5px 0;">অতিরিক্ত গতিতে গাড়ি চালালে দুর্ঘটনার ঝুঁকি অনেক বেশি হয়।</p>
+                    <a href="https://www.youtube.com/watch?v=Lp8p6rG_4pI" target="_blank" style="color: #1976d2; text-decoration: none; font-weight: bold;">▶ ভিডিও দেখুন</a>
+                </div>
+
+                <div style="background: #fff; border: 1px solid #ddd; padding: 12px; border-radius: 10px;">
+                    <strong style="color: #d32f2f;">২। লেন পরিবর্তনের ঝুঁকি</strong>
+                    <p style="font-size: 0.9em; color: #555; margin: 5px 0;">হঠাৎ লেন পরিবর্তন করলে বড় দুর্ঘটনা ঘটতে পারে।</p>
+                    <a href="https://www.youtube.com/watch?v=7XG3Y96m8p0" target="_blank" style="color: #1976d2; text-decoration: none; font-weight: bold;">▶ ভিডিও দেখুন</a>
+                </div>
+
+                <div style="background: #fff; border: 1px solid #ddd; padding: 12px; border-radius: 10px;">
+                    <strong style="color: #d32f2f;">৩। ওভারটেকিং সেফটি টিপস</strong>
+                    <p style="font-size: 0.9em; color: #555; margin: 5px 0;">ওভারটেক করার সময় সঠিক নিয়ম না মানলে মুখোমুখি সংঘর্ষ হতে পারে।</p>
+                    <a href="https://www.youtube.com/watch?v=F0S160G_U9E" target="_blank" style="color: #1976d2; text-decoration: none; font-weight: bold;">▶ ভিডিও দেখুন</a>
+                </div>
+
+                <div style="background: #fff; border: 1px solid #ddd; padding: 12px; border-radius: 10px;">
+                    <strong style="color: #d32f2f;">৪। মনোযোগ ধরে রাখা</strong>
+                    <p style="font-size: 0.9em; color: #555; margin: 5px 0;">মোবাইল ব্যবহার বা অন্য দিকে তাকানো অত্যন্ত বিপজ্জনক।</p>
+                    <a href="https://www.youtube.com/watch?v=6Yid0I8BfSw" target="_blank" style="color: #1976d2; text-decoration: none; font-weight: bold;">▶ ভিডিও দেখুন</a>
+                </div>
+
+                <div style="background: #fff; border: 1px solid #ddd; padding: 12px; border-radius: 10px;">
+                    <strong style="color: #d32f2f;">৫। ঘুম ও ক্লান্তি নিয়ে ড্রাইভিং</strong>
+                    <p style="font-size: 0.9em; color: #555; margin: 5px 0;">ক্লান্ত অবস্থায় গাড়ি চালালে নিয়ন্ত্রণ হারানোর সম্ভাবনা থাকে।</p>
+                    <a href="https://www.youtube.com/watch?v=vV1p209t3_A" target="_blank" style="color: #1976d2; text-decoration: none; font-weight: bold;">▶ ভিডিও দেখুন</a>
+                </div>
+
+                <div style="background: #fff; border: 1px solid #ddd; padding: 12px; border-radius: 10px;">
+                    <strong style="color: #d32f2f;">৬। সিট বেল্ট জীবন রক্ষা করে</strong>
+                    <p style="font-size: 0.9em; color: #555; margin: 5px 0;">সিট বেল্ট ব্যবহার করলে দুর্ঘটনায় মৃত্যুর ঝুঁকি অনেক কমে।</p>
+                    <a href="https://www.youtube.com/watch?v=h-8PBx7isoM" target="_blank" style="color: #1976d2; text-decoration: none; font-weight: bold;">▶ ভিডিও দেখুন</a>
+                </div>
+
+            </div>
+        `,
+        youtubeId: 'mzHuFmATv6c' // মূল ভিডিও হিসেবে একটি জেনারেল রোড সেফটি ভিডিও দেওয়া হয়েছে
+    },
+  
 
 }; // End of Object

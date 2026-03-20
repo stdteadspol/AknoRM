@@ -523,27 +523,31 @@ const aknoRM_Data = {
      // ==========================================
     // 8. About AknoRM (অ্যাপ সম্পর্ক)
     // ==========================================
-    'About': {
+   'About': {
         title: 'অ্যাপ সম্পর্কে (About AknoRM)',
         text: `
             <div style="text-align: center; padding: 20px;">
-                <img src="logo.png" style="width: 80px; margin-bottom: 15px;">
-                <h3 style="color: var(--army-green);">AknoRM</h3>
-                <p><strong>ASC Knowledge Repository (MT)</strong></p>
-                <hr>
-                <p style="text-align: left; line-height: 1.6;">
-                    <strong>উদ্দেশ্য:</strong> বাংলাদেশ সেনাবাহিনীর এমটি (MT) পেশার সেনাসদস্যদের পেশাদার জ্ঞান বৃদ্ধি, নিরাপদ ড্রাইভিং নিশ্চিতকরণ এবং যান্ত্রিক ত্রুটি নিরূপণে তাৎক্ষণিক সহায়তা প্রদানের লক্ষ্যে এই ডিজিটাল প্ল্যাটফর্মটি তৈরি করা হয়েছে। 
+                <img src="icon/logo.png" style="width: 120px; height: auto; margin-bottom: 15px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                
+                <h3 style="color: var(--army-green); margin-bottom: 5px;">AknoRM</h3>
+                <p style="margin-top: 0;"><strong>ASC Knowledge Repository (MT)</strong></p>
+                <hr style="border: 0; border-top: 1px solid #ddd; margin: 20px 0;">
+                
+                <p style="text-align: left; line-height: 1.6; color: #444;">
+                    <strong>উদ্দেশ্য:</strong> বাংলাদেশ সেনাবাহিনীর এমটি (MT) পেশার সেনাসদস্যদের পেশাদার জ্ঞান বৃদ্ধি, নিরাপদ ড্রাইভিং নিশ্চিতকরণ এবং যান্ত্রিক ত্রুটি নিরূপণে তাৎক্ষণিক সহায়তা প্রদানের লক্ষ্যে এই ডিজিটাল প্ল্যাটফর্মটি তৈরি করা হয়েছে। 
                 </p>
-                <div style="background: #f4f4f4; padding: 15px; border-radius: 10px; margin-top: 20px;">
-                    <p><strong>পরিকল্পনা ও উন্নয়নে:</strong></p>
-                    <p style="font-weight: bold; color: var(--army-green); font-size: 1.2em;">লেঃ কর্নেল মোহাম্মদ আব্দুল কাদের,মোবাইলঃ০১৭৬৯০০৬৬২৩</p>
-                    <p>Supply & Transport Directorate</p>
+                
+                <div style="background: #f9f9f9; padding: 20px; border-radius: 12px; margin-top: 25px; border: 1px solid #eee;">
+                    <p style="margin-bottom: 10px; color: #666; font-size: 0.9em;"><strong>পরিকল্পনা ও উন্নয়নে:</strong></p>
+                    <p style="font-weight: bold; color: var(--army-green); font-size: 1.1em; margin: 5px 0;">লেঃ কর্নেল মোহাম্মদ আব্দুল কাদের</p>
+                    <p style="margin: 5px 0; font-weight: bold; color: #d32f2f;">মোবাইলঃ ০১৭৬৯০০৬৬২৩</p>
+                    <p style="margin: 5px 0; font-size: 0.9em;">সাপ্লাই অ্যান্ড ট্রান্সপোর্ট (ST) ডিরেক্টরেট</p>
                 </div>
-                <p style="font-size: 0.8em; margin-top: 20px; color: #777;">ভার্সন: ১.০.০ (২০২৬)</p>
+                
+                <p style="font-size: 0.8em; margin-top: 30px; color: #999;">ভার্সন: ১.০.০ (২০২৬)</p>
             </div>
         `,
-        youtubeId: '' // এখানে কোনো ভিডিওর প্রয়োজন নেই
+        youtubeId: '' 
     }
-    
 
 }; // End of Object

@@ -179,12 +179,77 @@ const aknoRM_Data = {
     // ==========================================
     // 4. Troubleshooting (ত্রুটি নিরূপণ)
     // ==========================================
-    'Fault': { // This matches the ID 'Fault' in your HTML
-        title: 'ত্রুটি নিরূপণ (Troubleshooting)',
-        text: 'ইঞ্জিন স্টার্ট না হলে ব্যাটারি টার্মিনাল এবং ফুয়েল লাইন চেক করুন।',
-        youtubeId: 'example_fault'
-    }, // <-- Comma added here
 
+    'Fault': {
+        title: 'ত্রুটি নিরূপণ (Troubleshooting Guide)',
+        text: `
+            <div style="background: #fdf2f2; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #d32f2f;">
+                <strong>গাড়ির সাধারণ ত্রুটি ও সমাধানের নির্দেশিকা:</strong>
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 15px; margin-bottom: 12px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <strong style="color: #d32f2f;">ক। ইঞ্জিন স্টার্ট হচ্ছে না</strong><br>
+                <strong>🔍 কারণ:</strong> ব্যাটারি দুর্বল বা সংযোগ ঢিলা হতে পারে।<br>
+                <strong>✅ করণীয়:</strong> ব্যাটারি টার্মিনাল চেক করুন এবং কানেকশন শক্ত করুন।
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 15px; margin-bottom: 12px; border-radius: 10px;">
+                <strong style="color: #d32f2f;">খ। ইঞ্জিন ওভারহিটিং (Overheating)</strong><br>
+                <strong>🔍 কারণ:</strong> কুল্যান্ট কম অথবা রেডিয়েটর ফ্যান অচল।<br>
+                <strong>✅ করণীয়:</strong> কুল্যান্ট লেভেল চেক করুন এবং ফ্যান ঠিক আছে কি না দেখুন।
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 15px; margin-bottom: 12px; border-radius: 10px;">
+                <strong style="color: #d32f2f;">গ। ব্রেক কাজ করছে না / দুর্বল</strong><br>
+                <strong>🔍 কারণ:</strong> ব্রেক ফ্লুইড কম অথবা ব্রেক প্যাড ক্ষয়প্রাপ্ত।<br>
+                <strong>✅ করণীয়:</strong> ফ্লুইড লেভেল এবং ব্রেক প্যাডের অবস্থা পরীক্ষা করুন।
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 15px; margin-bottom: 12px; border-radius: 10px;">
+                <strong style="color: #1976d2;">ঘ। গাড়ি একদিকে টানছে</strong><br>
+                <strong>🔍 কারণ:</strong> টায়ারের বাতাস কম বা অ্যালাইনমেন্ট ভুল।<br>
+                <strong>✅ করণীয়:</strong> টায়ার প্রেসার চেক করুন এবং হুইল অ্যালাইনমেন্ট ঠিক করুন।
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 15px; margin-bottom: 12px; border-radius: 10px;">
+                <strong style="color: #1976d2;">ঙ। ইঞ্জিন থেকে অস্বাভাবিক শব্দ</strong><br>
+                <strong>🔍 কারণ:</strong> ইঞ্জিন অয়েল কম বা বেল্ট/পুলি ঢিলা।<br>
+                <strong>✅ করণীয়:</strong> অয়েল লেভেল চেক করুন এবং বেল্ট পরীক্ষা করুন।
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 15px; margin-bottom: 12px; border-radius: 10px;">
+                <strong style="color: #1976d2;">চ। লাইট কাজ করছে না</strong><br>
+                <strong>🔍 কারণ:</strong> ফিউজ নষ্ট বা বাল্ব পুড়ে গেছে।<br>
+                <strong>✅ করণীয়:</strong> ফিউজ বক্স চেক করুন এবং বাল্ব পরিবর্তন করুন।
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 15px; margin-bottom: 12px; border-radius: 10px;">
+                <strong style="color: #d32f2f;">ছ। গিয়ার পরিবর্তন করতে সমস্যা</strong><br>
+                <strong>🔍 কারণ:</strong> গিয়ার অয়েল কম বা ক্লাচ প্লেট ক্ষয়প্রাপ্ত।<br>
+                <strong>✅ করণীয়:</strong> গিয়ার অয়েল চেক করুন এবং ক্লাচ পরীক্ষা করুন।
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 15px; margin-bottom: 12px; border-radius: 10px;">
+                <strong style="color: #1976d2;">জ। স্টিয়ারিং ভারী লাগছে</strong><br>
+                <strong>🔍 কারণ:</strong> পাওয়ার স্টিয়ারিং ফ্লুইড কম বা পাম্প নষ্ট।<br>
+                <strong>✅ করণীয়:</strong> স্টিয়ারিং ফ্লুইড লেভেল এবং পাম্প পরীক্ষা করুন।
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 15px; margin-bottom: 12px; border-radius: 10px;">
+                <strong style="color: #388e3c;">ঝ। গাড়ি ঝাঁকুনি দিচ্ছে / কাঁপছে</strong><br>
+                <strong>🔍 কারণ:</strong> সাসপেনশন বা শক অ্যাবজর্বার নষ্ট।<br>
+                <strong>✅ করণীয়:</strong> সাসপেনশন সিস্টেম এবং শক অ্যাবজর্বার চেক করুন।
+            </div>
+
+            <div style="background: #fff; border: 1px solid #ddd; padding: 15px; margin-bottom: 12px; border-radius: 10px;">
+                <strong style="color: #388e3c;">ঞ। জ্বালানি খরচ বেশি হচ্ছে</strong><br>
+                <strong>🔍 কারণ:</strong> এয়ার ফিল্টার ময়লা বা ইনজেক্টর অপরিষ্কার।<br>
+                <strong>✅ করণীয়:</strong> এয়ার ফিল্টার ও ইনজেক্টর পরিষ্কার করুন।
+            </div>
+        `,
+        youtubeId: 'mzHuFmATv6c' // Replace with a repair/troubleshooting video
+    },
+  
     // ==========================================
     // 5. Maintenance (রক্ষণাবেক্ষণ)
     // ==========================================

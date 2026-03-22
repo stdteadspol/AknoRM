@@ -246,8 +246,116 @@ const aknoRM_Data = {
                 </div>
             </details>
 
+           <details style="background: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 10px; border-left: 5px solid red; overflow: hidden;">
+                <summary style="display: flex; align-items: center; padding: 12px; cursor: pointer; list-style: none; outline: none;">
+                    <img src="icon/seat_belt.png" style="width: 40px; height: auto; margin-right: 15px;" alt="Seatbelt">
+                    <strong style="flex: 1;">💺 সিট বেল্ট রিমাইন্ডার</strong>
+                    <span style="color: #999;">▼</span>
+                </summary>
+                <div style="padding: 10px 15px 15px 67px; background: #fffafb; border-top: 1px solid #eee; font-size: 0.9em;">
+                    <p style="margin: 0;"><strong>কারণ:</strong> চালক বা আরোহী সিট বেল্ট পরেননি।</p>
+                    <p style="margin: 5px 0 0;"><strong>করণীয়:</strong> দ্রুত এবং সঠিকভাবে সিট বেল্ট লাগিয়ে নিন।</p>
+                </div>
+            </details>
+
+            <details style="background: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 10px; border-left: 5px solid red; overflow: hidden;">
+                <summary style="display: flex; align-items: center; padding: 12px; cursor: pointer; list-style: none; outline: none;">
+                    <img src="icon/airbag.png" style="width: 40px; height: auto; margin-right: 15px;" alt="Airbag">
+                    <strong style="flex: 1;">🎈 এয়ারব্যাগ ওয়ার্নিং</strong>
+                    <span style="color: #999;">▼</span>
+                </summary>
+                <div style="padding: 10px 15px 15px 67px; background: #fffafb; border-top: 1px solid #eee; font-size: 0.9em;">
+                    <p style="margin: 0;"><strong>কারণ:</strong> এয়ারব্যাগ সিস্টেমে যান্ত্রিক ত্রুটি অথবা সিট বেল্ট সেন্সর সমস্যা।</p>
+                    <p style="margin: 5px 0 0;"><strong>করণীয়:</strong> দ্রুত সিট বেল্ট পরুন এবং বিশেষজ্ঞ দ্বারা সিস্টেমটি চেক করান।</p>
+                </div>
+            </details>
+
+            <details style="background: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 10px; border-left: 5px solid #ffc107; overflow: hidden;">
+                <summary style="display: flex; align-items: center; padding: 12px; cursor: pointer; list-style: none; outline: none;">
+                    <img src="icon/water_fuelfilter.png" style="width: 40px; height: auto; margin-right: 15px;" alt="Fuel">
+                    <strong style="flex: 1;">💧 ওয়াটার ইন ফুয়েল ফিল্টার</strong>
+                    <span style="color: #999;">▼</span>
+                </summary>
+                <div style="padding: 10px 15px 15px 67px; background: #fffdf7; border-top: 1px solid #eee; font-size: 0.9em;">
+                    <p style="margin: 0;"><strong>কারণ:</strong> ফুয়েল ফিল্টারে অতিরিক্ত পানি জমেছে যা ইঞ্জিনের ক্ষতি করতে পারে।</p>
+                    <p style="margin: 5px 0 0;"><strong>করণীয়:</strong> ফিল্টার ড্রেন করুন অথবা দ্রুত পরিষ্কার করুন।</p>
+                </div>
+            </details>
+
+            <details style="background: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 10px; border-left: 5px solid #ffc107; overflow: hidden;">
+                <summary style="display: flex; align-items: center; padding: 12px; cursor: pointer; list-style: none; outline: none;">
+                    <img src="icon/abs.png" style="width: 40px; height: auto; margin-right: 15px;" alt="ABS">
+                    <strong style="flex: 1;">🛞 ABS ওয়ার্নিং</strong>
+                    <span style="color: #999;">▼</span>
+                </summary>
+                <div style="padding: 10px 15px 15px 67px; background: #fffdf7; border-top: 1px solid #eee; font-size: 0.9em;">
+                    <p style="margin: 0;"><strong>কারণ:</strong> এন্টি-লক ব্রেকিং সিস্টেমের সেন্সর বা মোটর কাজ করছে না।</p>
+                    <p style="margin: 5px 0 0;"><strong>করণীয়:</strong> সেন্সর পরিষ্কার বা পরিবর্তন করে ব্রেক সিস্টেম চেক করুন।</p>
+                </div>
+            </details>
+
+            <details style="background: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 10px; border-left: 5px solid #ffc107; overflow: hidden;">
+                <summary style="display: flex; align-items: center; padding: 12px; cursor: pointer; list-style: none; outline: none;">
+                    <img src="icon/stability_off.png" style="width: 40px; height: auto; margin-right: 15px;" alt="Stability">
+                    <strong style="flex: 1;">⚖️ স্টাবিলিটি কন্ট্রোল অফ (TCS)</strong>
+                    <span style="color: #999;">▼</span>
+                </summary>
+                <div style="padding: 10px 15px 15px 67px; background: #fffdf7; border-top: 1px solid #eee; font-size: 0.9em;">
+                    <p style="margin: 0;"><strong>কারণ:</strong> ট্রাকশন কন্ট্রোল সেন্সর বা স্টাবিলিটি সিস্টেম কাজ করছে না।</p>
+                    <p style="margin: 5px 0 0;"><strong>করণীয়:</strong> TCS সেন্সর চেক করুন এবং প্রয়োজন হলে পরিবর্তন করুন।</p>
+                </div>
+            </details>
+
+            <details style="background: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 10px; border-left: 5px solid #ffc107; overflow: hidden;">
+                <summary style="display: flex; align-items: center; padding: 12px; cursor: pointer; list-style: none; outline: none;">
+                    <img src="icon/distance.png" style="width: 40px; height: auto; margin-right: 15px;" alt="Distance">
+                    <strong style="flex: 1;">📏 ডিস্টেন্স ওয়ার্নিং</strong>
+                    <span style="color: #999;">▼</span>
+                </summary>
+                <div style="padding: 10px 15px 15px 67px; background: #fffdf7; border-top: 1px solid #eee; font-size: 0.9em;">
+                    <p style="margin: 0;"><strong>কারণ:</strong> সামনের গাড়ির সাথে দূরত্ব কমে গেছে অথবা সেন্সর কাজ করছে না।</p>
+                    <p style="margin: 5px 0 0;"><strong>করণীয়:</strong> নিরাপদ দূরত্ব বজায় রাখুন এবং সেন্সর চেক করুন।</p>
+                </div>
+            </details>
+
+            <details style="background: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 10px; border-left: 5px solid #2196f3; overflow: hidden;">
+                <summary style="display: flex; align-items: center; padding: 12px; cursor: pointer; list-style: none; outline: none;">
+                    <img src="icon/rear_window_defroster.png" style="width: 40px; height: auto; margin-right: 15px;" alt="Defroster">
+                    <strong style="flex: 1;">🌫️ রিয়ার উইন্ডো ডিফ্রোস্টার</strong>
+                    <span style="color: #999;">▼</span>
+                </summary>
+                <div style="padding: 10px 15px 15px 67px; background: #f0f7ff; border-top: 1px solid #eee; font-size: 0.9em;">
+                    <p style="margin: 0;"><strong>কারণ:</strong> রিয়ার উইন্ডো হিটিং কয়েল অথবা সুইচ সচল আছে/কাজ করছে না।</p>
+                    <p style="margin: 5px 0 0;"><strong>করণীয়:</strong> কুয়াশা কমলে সুইচ অফ করুন। কাজ না করলে সুইচ বা কয়েল মেরামত করুন।</p>
+                </div>
+            </details>
+
+            <details style="background: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 10px; border-left: 5px solid #4caf50; overflow: hidden;">
+                <summary style="display: flex; align-items: center; padding: 12px; cursor: pointer; list-style: none; outline: none;">
+                    <img src="icon/fogg_light.png" style="width: 40px; height: auto; margin-right: 15px;" alt="Fog">
+                    <strong style="flex: 1;">☁️ ফগ লাইট ইন্ডিকেটর</strong>
+                    <span style="color: #999;">▼</span>
+                </summary>
+                <div style="padding: 10px 15px 15px 67px; background: #f1f8e9; border-top: 1px solid #eee; font-size: 0.9em;">
+                    <p style="margin: 0;"><strong>কারণ:</strong> ফগ লাইট অন আছে অথবা বাল্ব/সুইচ কাজ করছে না।</p>
+                    <p style="margin: 5px 0 0;"><strong>করণীয়:</strong> প্রয়োজন না থাকলে অফ করুন। না জ্বললে বাল্ব বা সুইচ পরিবর্তন করুন।</p>
+                </div>
+            </details>
+
+            <details style="background: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 10px; border-left: 5px solid #ffc107; overflow: hidden;">
+                <summary style="display: flex; align-items: center; padding: 12px; cursor: pointer; list-style: none; outline: none;">
+                    <img src="icon/glow_plug.png" style="width: 40px; height: auto; margin-right: 15px;" alt="Glowplug">
+                    <strong style="flex: 1;">➰ গ্লো প্লাগ (Diesel Pre-heat)</strong>
+                    <span style="color: #999;">▼</span>
+                </summary>
+                <div style="padding: 10px 15px 15px 67px; background: #fffdf7; border-top: 1px solid #eee; font-size: 0.9em;">
+                    <p style="margin: 0;"><strong>কারণ:</strong> ডিজেল ইঞ্জিন প্রি-হিট সিস্টেম কাজ করছে না বা গ্লো রিলে ত্রুটিপূর্ণ।</p>
+                    <p style="margin: 5px 0 0;"><strong>করণীয়:</strong> রিলে বা গ্লো প্লাগ বিশেষজ্ঞ দ্বারা চেক করুন।</p>
+                </div>
+            </details>
+
             <p style="background:#fffde7; padding:12px; border-radius:8px; border: 1px dashed #ffd54f; margin-top: 20px; font-size: 0.85em; text-align: center;">
-                <strong>💡 টিপস:</strong> ড্যাশবোর্ডের সব বাতি একবার জ্বলে নেভাকে 'বাল্ব চেক' বলে। ড্রাইভের সময় জ্বলে উঠলে তবেই গুরুত্ব দিন।
+                <strong>💡 পরামর্শ:</strong> নিরাপদ ড্রাইভিংয়ের জন্য লাল বাতি জ্বলে উঠলে সাথে সাথে ব্যবস্থা নিন।
             </p>
         `,
         youtubeId: 'mzHuFmATv6c'
